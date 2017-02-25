@@ -1,5 +1,5 @@
 var express = require('express');
-var HangPerson = require('../lib/hangperson');
+var Hangperson = require('../lib/hangperson');
 var GameModel = require('../models/Game');
 
 var router = express.Router();
@@ -28,6 +28,8 @@ router.post('/new', (req, res) => {
 		savedGame: newGame.serialize(),
 		startDate: (new Date()).getTime()
 	}, function() {
-		res.json(newGame.present());	
+		res.json(newGame.present());
 	})
 });
+
+module.exports = router;

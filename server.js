@@ -22,7 +22,7 @@ db.once('open', function() {
 		}
 );
 
-var gameController = require('./controllers/game_controller');
+var gameController = require('./server/controllers/game_controller');
 
 app.use(express.static("./public"));
 

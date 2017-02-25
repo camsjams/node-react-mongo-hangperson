@@ -28,7 +28,7 @@ app.use(express.static("./public"));
 
 app.use('/hangperson', gameController);
 
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 6060;
 app.listen(PORT, () => {
 	console.log("Server listening on port " + PORT);
 });
